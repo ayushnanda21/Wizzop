@@ -125,3 +125,7 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL	=	'dashboard'
 LOGIN_URL	=	'login'
 LOGOUT_URL	=	'logout'
+
+#SMTP configuration so that django can send emails while resetting password in backend.
+
+EMAIL_BACKEND	=	'django.core.mail.backends.console.EmailBackend'
